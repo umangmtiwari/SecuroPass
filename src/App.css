@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body{
+  background-color: aqua;
+  width: 100%;
+  height: 100vh;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.passwordBox{
+  width: 350px;
+  padding: 20px;
+  background-color: chartreuse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.passwordBoxIn{
+  display: flex;
+}
+
+.passwordBoxIn input{
+  flex-basis: 80%;
+  padding: 10px;
+  font-size: large;
+}
+
+.passwordBoxIn button{
+  flex-basis: 20%;
+  padding: 10px 0px;
+}
+
+.passLength{
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.passLength input{
+  padding: 6px 3px;
+  width: 40px;
+}
+
+.head{
+  text-align: center;
+  padding: 2%;
+}
+
+.bottom{
+  align-items:  center;
+  padding: 10px 1px;
+  text-align: center;
+  font-size: large;
+  width: 95%;
 }
